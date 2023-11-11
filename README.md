@@ -52,3 +52,20 @@ next는 한번 써봤고 스터디에서 책도 한바퀴 돌려보고 공식문
 ---
 
 - 5강
+    - 배울것
+        - next/link
+        - usePathname
+        - How navigation work
+    - 대부분의 사람들은 HTML,mdn의 여러 기능들을 외우면서 쓰는데, 앞으로는 Next가 그렇게 되버릴까?(몇몇 아웃라이어 제외)
+    - a -> Link
+        - without full refresh!
+        - 이유는 Automatic code-splitting and prefetching
+            - route segments를 바탕으로 자동으로 코드스플리팅을 한다.
+            - 이는 격리됨을 의미하고 따라서 에러가 나도 죽지않는다.
+            - 백그라운드에서 넘어갈곳을 자동으로 프리패치한다. 그래서 즉각전환처럼 보임ㄷㄷ
+    - usePathname
+        - client 사이드에서만 가능
+        - clsx와 함께 동적으로 랜더링가능
+        - layout이라서... 랜더링 이점 또한 있겠지..?
+        
+    
