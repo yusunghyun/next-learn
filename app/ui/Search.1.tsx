@@ -1,5 +1,4 @@
 "use client";
-
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
@@ -14,15 +13,13 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
     // 현재 경로 + searchParams+URLSearchParams에 입력값 넣고 replace
     const params = new URLSearchParams(nextSearchParams);
-    params.set("page", "1");
-
     if (term) {
       params.set("query", term);
     } else {
       params.delete("query");
     }
     nextReplace(`${nextPathname}?${params.toString()}`);
-  }, 3000);
+  }, 300);
 
   return (
     <div className="relative flex flex-1 flex-shrink-0">
